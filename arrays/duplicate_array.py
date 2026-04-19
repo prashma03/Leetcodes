@@ -7,3 +7,14 @@ def duplicate_array(nums):
   return False
 nums = [1,2,1,1,3]
 print(duplicate_array(nums))
+
+#Another approach
+def duplicate_array(nums):
+  set_nums = set(nums)
+  if len(nums)==len(set_nums):
+    return False
+  else:
+    return True
+nums = [1, 2, 1, 1, 3]
+print(duplicate_array(nums))
+  
