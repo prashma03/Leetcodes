@@ -7,3 +7,10 @@ def missing_numbers(nums):
       return i
 input = [3,0,1]
 print(missing_numbers(input))
+
+
+#Alternative approach
+def missing_numbers(nums):
+  return sum(range(len(nums)+1)) - sum(nums)
+num = [3,0,1]
+print(missing_numbers(num))
