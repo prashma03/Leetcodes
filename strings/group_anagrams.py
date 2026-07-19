@@ -1,5 +1,5 @@
 from collections import defaultdict
-def groupAnalgams(strs):
+def groupAnagrams(strs):
   groups = defaultdict(list)
   for word in strs:
     key = "".join(sorted(word))
